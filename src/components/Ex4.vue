@@ -21,6 +21,6 @@ function add() {
     <button @click="items.splice(index, 1)">Delete</button>
     </li>
 </ul>
-<input type="text" v-model="newItem" @keydown.enter = "add()"><button @click="add()">Add</button>
+<input type="text" v-model="newItem" @keyup.enter = "add()"><button @click="add()">Add</button>
    
 </template>
